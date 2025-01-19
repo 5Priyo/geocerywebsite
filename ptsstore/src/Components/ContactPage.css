@@ -1,0 +1,166 @@
+/* General Container Styling */
+.contact-container {
+  padding: 2rem;
+  background-color:rgb(224, 227, 231);
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-containerfull {
+  background-color:rgb(119, 70, 9);
+  padding: 1rem;
+}
+
+/* Headings */
+h1, h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #252323;
+}
+
+h3 {
+  font-size: 0.5rem;
+  color: #ee8068;
+}
+
+/* Navigation Section */
+.contactnav {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #dbe0e3;
+  /* color: white; */
+  border-radius: 5px;
+}
+
+.contactnav .contactp {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e9eeea;
+}
+
+/* Logo Styling */
+.contact-image {
+  /* display: block; */
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+}
+/* .contact-img1{
+ 
+} */
+
+/* Contact Info Section */
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #ebe4e4;
+}
+
+.contact-info a {
+  color: #d77520;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #218838;
+}
+
+.form-status {
+  margin-top: 1rem;
+  color: #28a745;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Map Section */
+.map-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.map-container iframe {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navact {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black; /* Default text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navact:hover {
+  background-color: #bd7018; /* Hover background */
+  color: #333; /* Hover text color */
+}
+
+.navact.active {
+  background-color: #cc7115; /* Active background */
+  color: white; /* Active text color */
+  border-radius: 5px; /* Optional rounded corners */
+}

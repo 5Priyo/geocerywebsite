@@ -1,0 +1,144 @@
+/* Base styling for the footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  .footer-section links a{
+    color: rgb(14, 13, 13);
+  }
+  
+  .footer-section {
+    margin: 20px;
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+  }
+  
+  .footer-section h2, .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    position: relative;
+    color: #f39c12;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  /* Section styles */
+  .footer-section p, .footer-section a {
+    font-size: 1.1em;
+    color: #ecf0f1;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #000;
+  }
+  
+  .footer-section a:hover {
+    color: #f39c12;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .social-icon {
+    font-size: 2.5em;
+    color: #ecf0f1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    transform: translateY(-5px);
+    color: #f39c12;
+  }
+  
+  /* Footer bottom section */
+  .footer-bottom {
+    margin-top: 30px;
+    background-color: #34495e;
+    padding: 15px 0;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #bdc3c7;
+  }
+  
+  /* Add animated effect to footer */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .footer {
+    animation: slideIn 1s ease-out forwards;
+  }
+  
+  /* Newsletter form styling */
+  .newsletter-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .newsletter-input {
+    padding: 12px;
+    font-size: 1.1em;
+    width: 100%;
+    border: 2px solid #f39c12;
+    border-radius: 2px;
+    outline: none;
+    background-color: #34495e;
+    color: white;
+  }
+  
+  .newsletter-input::placeholder {
+    color: #bdc3c7;
+  }
+  
+  .newsletter-button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-button:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Hover effect for sections */
+  .footer-section:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+  }
+  

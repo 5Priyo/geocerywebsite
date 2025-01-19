@@ -1,0 +1,553 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "1234jane",
+      "phoneNumber": "987-654-3210",
+      "address": "123 Main St, Cityville, Country",
+      "status": "terminated",
+      "createdAt": "2024-12-02T12:00:00Z",
+      "updatedAt": "2024-12-15T14:30:00Z"
+    },
+    {
+      "id": "e833",
+      "name": "tamil",
+      "email": "abc@gmail.com",
+      "password": "1234tamil"
+    }
+  ],
+  "products": [
+    {
+      "id": "2",
+      "name": "Sampa",
+      "description": "Product B is known for its reliability",
+      "price": 300,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/rice2.png"
+    },
+    {
+      "id": "3",
+      "name": "Anchor",
+      "description": "Product B is known for its reliability",
+      "price": 900,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/p21.png"
+    },
+    {
+      "id": "4",
+      "name": "Parboiled rice",
+      "description": "Product B is known for its reliability",
+      "price": 350,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/rice.png"
+    },
+    {
+      "id": "5",
+      "name": "Red Rice",
+      "description": "Product B is known for its reliability",
+      "price": 200,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/rice4.png"
+    },
+    {
+      "id": "6",
+      "name": "Jasmine Rice",
+      "description": "Product B is known for its reliability",
+      "price": 390,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/rice5.png"
+    },
+    {
+      "id": "7",
+      "name": "Rye",
+      "description": "Product B is known for its reliability",
+      "price": 150,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/p15.png"
+    },
+    {
+      "id": "8",
+      "name": "Parboiled rice",
+      "description": "Product B is known for its reliability",
+      "price": 350,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/rice2.png"
+    },
+    {
+      "id": "9",
+      "name": "Parboiled rice",
+      "description": "Product B is known for its reliability",
+      "price": 350,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/rice2.png"
+    },
+    {
+      "id": "10",
+      "name": "Black Jasmine Rice",
+      "description": "Product B is known for its reliability",
+      "price": 250,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/so4.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Rye",
+      "description": "Product B is known for its reliability",
+      "price": 150,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/so3.webp"
+    },
+    {
+      "id": "12",
+      "name": "Basmati Rice",
+      "description": "Product B is known for its reliability",
+      "price": 290,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/so2.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Sushi Rice",
+      "description": "Product B is known for its reliability",
+      "price": 310,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/so5.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Black Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 210,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice1.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Purple Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 230,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice2.webp"
+    },
+    {
+      "id": "16",
+      "name": "Red Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 200,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice3.webp"
+    },
+    {
+      "id": "17",
+      "name": "Red Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 200,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice4.webp"
+    },
+    {
+      "id": "18",
+      "name": "Red Cargo Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 400,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice5.avif"
+    },
+    {
+      "id": "19",
+      "name": "Rose Matta Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 270,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice7.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Rose Matta Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 270,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice8.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Brown Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 330,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice9.webp"
+    },
+    {
+      "id": "22",
+      "name": "Rose Matta Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 270,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice10.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Rose Matta Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 270,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice11.webp"
+    },
+    {
+      "id": "24",
+      "name": "Rose Matta Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 220,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice12.jpg"
+    },
+    {
+      "id": "25",
+      "name": "Brown Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 240,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice13.jpeg"
+    },
+    {
+      "id": "26",
+      "name": "Rose Matta Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 200,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/redrice14.webp"
+    },
+    {
+      "id": "27",
+      "name": "Sushi Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 310,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/so5.jpg"
+    },
+    {
+      "id": "28",
+      "name": "Sushi Rice",
+      "description": "Product B is known for its reliability",
+      "category": "redrice",
+      "price": 310,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/so5.jpg"
+    },
+    {
+      "id": "29",
+      "name": "Parboiled Long Grainrice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 200,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice1.webp"
+    },
+    {
+      "id": "30",
+      "name": "Basmati Rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 290,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice2.png"
+    },
+    {
+      "id": "31",
+      "name": "Basmati Rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 290,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice3.jpg"
+    },
+    {
+      "id": "32",
+      "name": "White Jasmine rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 300,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice4.webp"
+    },
+    {
+      "id": "33",
+      "name": "Basmati Rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 290,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice5.jpg"
+    },
+    {
+      "id": "34",
+      "name": "Risotto Rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 200,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice6.jpg"
+    },
+    {
+      "id": "35",
+      "name": "Parboiled Long Grainrice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 300,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice7.jpg"
+    },
+    {
+      "id": "36",
+      "name": "Polished medium-grain rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 140,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice8.webp"
+    },
+    {
+      "id": "37",
+      "name": "Parboiled rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 290,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice9.jpeg"
+    },
+    {
+      "id": "38",
+      "name": "Parboiled rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 270,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice10.jpg"
+    },
+    {
+      "id": "39",
+      "name": "Jasmine Rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 300,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice11.webp"
+    },
+    {
+      "id": "40",
+      "name": "Wild Rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 380,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice12.webp"
+    },
+    {
+      "id": "41",
+      "name": "Velencia",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 500,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice13.jpg"
+    },
+    {
+      "id": "42",
+      "name": "Basmati Rice",
+      "description": "Product B is known for its reliability",
+      "category": "whiterice",
+      "price": 30,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/rice/whiterice14.webp"
+    },
+    {
+      "id": "43",
+      "name": "Sushi Rice",
+      "description": "Product B is known for its reliability",
+      "category": "milk",
+      "price": 300,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/so5.jpg"
+    },
+    {
+      "id": "44",
+      "name": "Sushi Rice",
+      "description": "Product B is known for its reliability",
+      "category": "chocomilk",
+      "price": 300,
+      "status": "archived",
+      "createdAt": "2024-12-03T08:00:00Z",
+      "updatedAt": "2024-12-12T11:00:00Z",
+      "image": "/Grocerys/so5.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Anchur",
+      "description": "Anchor Milk is known for its reliability",
+      "price": "500",
+      "image": "/Grocerys/milk.jpg"
+    }
+  ],
+
+  "orders": [
+    {
+      "id": "1",
+      "userId": 1,
+      "status": "pending",
+      "pickupDateTime": "2024-12-20T15:00:00Z",
+      "createdAt": "2024-12-15T14:00:00Z",
+      "updatedAt": "2024-12-15T14:00:00Z",
+      "phoneNumber": "123-456-7890",
+      "address": "123 Main St, Cityville, Country"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "status": "completed",
+      "pickupDateTime": "2024-12-10T11:30:00Z",
+      "createdAt": "2024-12-08T16:00:00Z",
+      "updatedAt": "2024-12-10T12:00:00Z",
+      "phoneNumber": "123-456-7890",
+      "address": "123 Main St, Cityville, Country"
+    }
+  ],
+
+
+
+  "order_items": [
+    {
+      "id": "1",
+      "orderId": 1,
+      "productId": 1,
+      "quantity": 2,
+      "price": 50
+    },
+    {
+      "id": "2",
+      "orderId": 2,
+      "productId": 2,
+      "quantity": 1,
+      "price": 30
+    },
+    {
+      "id": "b93b",
+      "userId": "2",
+      "products": [
+        {
+          "productId": "3",
+          "productName": "Anchor",
+          "quantity": 1,
+          "total": 900
+        },
+        {
+          "productId": "2",
+          "productName": "Sampa",
+          "quantity": 1,
+          "total": 300
+        }
+      ],
+      "totalAmount": 1200,
+      "date": "2025-01-09T06:44:47.493Z"
+    }
+  ]
+}
