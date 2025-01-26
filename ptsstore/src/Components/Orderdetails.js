@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation, Link } from "react-router-dom";
-import Footer from "./Footer";
-import './OrderDetails.css';
+import { useNavigate } from "react-router-dom";
+import "../CSS/OrderDetails.css";
+import Dashboard from "./Dashboard";
 
 function OrderDetails() {
+  const [orders, setOrders] = useState([]); // State to hold orders data
+  const [loading, setLoading] = useState(true); // State for loading status
+  const [error, setError] = useState(null); // State for error handling
+  const [loggedInUser, setLoggedInUser] = useState(null); // Logged in user
+
   const navigate = useNavigate();
-  const location = useLocation();
-  const { cartItems, totalPrice } = location.state || {};
 
-  const [loggedInUser, setLoggedInUser] = useState(null);
-
-  // Fetch logged-in user from localStorage
+  // Fetch logged-in user info from localStorage
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("loggedInUser"));
+    console.log(user); // Check if the user is fetched correctly
     if (user) {
       setLoggedInUser(user);
     } else {
@@ -20,93 +22,86 @@ function OrderDetails() {
     }
   }, [navigate]);
 
-  // Ensure totalPrice is defined and is a valid number
-  const validTotalPrice = totalPrice && !isNaN(totalPrice) ? totalPrice : 0;
+  // Fetch orders for the logged-in user or show all orders for admin
+  useEffect(() => {
+    if (loggedInUser) {
+      let fetchUrl = `http://localhost:3005/orders`;
+      
+      // If admin is logged in, show all orders, else show only user's orders
+      if (loggedInUser.role === "admin") {
+        fetchUrl = `http://localhost:3005/orders`; // Fetch all orders
+      } else {
+        fetchUrl = `http://localhost:3005/orders?userId=${loggedInUser.id}`; // Fetch only the logged-in user's orders
+      }
+
+      fetch(fetchUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          setOrders(data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          setError("Error fetching orders. Please try again later.");
+          setLoading(false);
+          console.error("Error fetching orders:", error);
+        });
+    }
+  }, [loggedInUser]);
 
   return (
     <>
-      <div className="store-container">
-        <h1 className="headpts">PTS Grocery Store</h1>
+      <Dashboard />
+      <div className="order-details">
+        {/* Show the logged-in user's name or a generic message */}
+    
+        {/* Show loading spinner */}
+        {loading && <p>Loading orders...</p>}
 
-        {/* Top Navigation Bar */}
-        <div className="topnav">
-          <Link to="/">
-            <img
-              src="/logo.jpg"
-              alt="PTS Grocery Store"
-              className="contact-image"
-              style={{ width: "50px", height: "50px" }}
-            />
-          </Link>
-          <Link
-            to="/"
-            className={`navact ${location.pathname === "/" ? "active" : ""}`}
-          >
-            Home
-          </Link>
-          <Link
-            to="/contact"
-            className={`navact ${
-              location.pathname === "/contact" ? "active" : ""
-            }`}
-          >
-            Contact
-          </Link>
-        </div>
+        {/* Show error message if fetch fails */}
+        {error && <p className="error-message">{error}</p>}
 
-        {/* Order Details Content */}
-        <div className="order-details-container">
-          <h1 className="order-details-title">
-            {loggedInUser ? loggedInUser.name : "User"}'s Order Details
-          </h1>
+        {/* Display orders in separate boxes */}
+        {orders.length > 0 ? (
+          <div className="orders-container">
+            {orders.map((order) => (
+              <div key={order.orderId} className="order-box">
+                <h2>Order ID: {order.orderId}</h2>
+               
+                <p><strong>Name</strong> {order.username}</p>
+                <p><strong>Status:</strong> {order.status}</p>
+                <p><strong>Phone:</strong> {order.phoneNumber}</p>
+                <p><strong>Address:</strong> {order.address}</p>
+                <p><strong>Booking Date:</strong> {new Date(order.createdAt).toLocaleDateString()}</p>
+                <p><strong>Pickup Date:</strong> {new Date(order.pickupDateTime).toLocaleDateString()}</p>
 
-          {/* Cart items summary */}
-          <h2 className="cart-summary-title">Cart Summary</h2>
-          {cartItems && cartItems.length > 0 ? (
-            <table className="orders-table">
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                {cartItems.map((item) => {
-                  const validPrice =
-                    item.price && !isNaN(item.price) ? item.price : 0;
-                  const validQuantity =
-                    item.quantity && !isNaN(item.quantity) ? item.quantity : 1;
-                  const itemTotal = (validPrice * validQuantity).toFixed(2);
+                {/* Display product details for each order */}
+                <div className="cart-items">
+                  {order.cartItems.map((item) => {
+                    const itemTotal = (item.price * item.quantity).toFixed(2);
+                    return (
+                      <div key={item.id} className="cart-item">
+                        <img src={item.image} alt={item.name} style={{ width: '100px', height: '100px' }} className="product-image" />
+                        <div>
+                          <h4>{item.name}</h4>
+                          <p>Quantity: {item.quantity}</p>
+                          <p>Price: Rs.{item.price}</p>
+                          <p>Total: Rs.{itemTotal}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
 
-                  return (
-                    <tr key={item.id}>
-                      <td>{item.name}</td>
-                      <td>{validQuantity}</td>
-                      <td>Rs.{validPrice}</td>
-                      <td>Rs.{itemTotal}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          ) : (
-            <p className="empty-cart-message">No items in cart</p>
-          )}
-
-          {/* Total price */}
-          <h3 className="total-price">
-            Total Price: Rs.{validTotalPrice.toFixed(2)}
-          </h3>
-
-          <h2 className="orders-title">Your Orders</h2>
-          <p className="order-processing-message">
-            Your order will be processed based on the above cart details.
-          </p>
-        </div>
+                <p className="order-total">
+                  <strong>Total Price:</strong> Rs.{order.totalPrice}
+                </p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          !loading && <p className="empty-orders-message">No orders available</p>
+        )}
       </div>
-      <Footer />
     </>
   );
 }

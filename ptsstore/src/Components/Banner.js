@@ -10,7 +10,9 @@ import 'swiper/css/autoplay'
 
 const Slider= () => {
   return (
-    <div>
+
+
+  <div>
   <Swiper
   spaceBetween={50}
   modules={[Navigation, Pagination]}
@@ -19,8 +21,8 @@ const Slider= () => {
 >
 
   <SwiperSlide>
-  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src='./banner.jpg' alt='' style={{ width: '100%', height: '90vh', objectFit: 'cover' }} />
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',borderRadius:'0px' }}>
+            <img src='./banner.jpg' alt='' style={{ width: '100%', height: '90vh', objectFit: 'cover',borderRadius:'0px'  }} />
             </div>
   </SwiperSlide>
   <SwiperSlide>
@@ -50,7 +52,7 @@ const Slider= () => {
   slidesPerView={4}
   navigation
   loop={true}
-  autoplay={{ delay: 2000 }}
+  autoplay={{ delay: 1000 }}
 >
 
 
@@ -86,6 +88,12 @@ const Slider= () => {
   <SwiperSlide>
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <img src='./p5.png' alt='' style={{ width: '300px', height: '300px', objectFit: 'cover' }} />
+    </div>
+  
+  </SwiperSlide>
+  <SwiperSlide>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src='./p7.webp' alt='' style={{ width: '300px', height: '300px', objectFit: 'cover' }} />
     </div>
   
   </SwiperSlide>

@@ -1,0 +1,62 @@
+/* Container for the order details page */
+.order-details {
+  margin-left:350px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading for the order details */
+.order-details h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Table for displaying order items */
+.order-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.order-items-table th,
+.order-items-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.order-items-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Delete button styling */
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+/* Styling for the message when there are no items */
+p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Add some padding and border to make the table look cleaner */
+.order-items-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.order-items-table tr:last-child td {
+  border-bottom: none;
+}

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";  // Import useNavigate for redirection
-import "./Login.css"; // CSS for the login page styling
+import { useNavigate } from "react-router-dom";
+import "../CSS/Login.css";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate();  // Initialize useNavigate
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     // Fetch users from db.json (json-server)
@@ -17,14 +17,19 @@ function Login() {
         const user = data.find(
           (user) => user.email === email && user.password === password
         );
+
         if (user) {
           // Successful login
           alert("Login successful!");
           // Store user details in localStorage
           localStorage.setItem("loggedInUser", JSON.stringify(user));
 
-          // Redirect to the dashboard after successful login
-          navigate("/");
+          // Redirect based on user role
+          if (user.role === "admin") {
+            navigate("/dashboard"); // Redirect to admin dashboard
+          } else {
+            navigate("/"); // Redirect to the main dashboard or user homepage
+          }
         } else {
           // Invalid credentials
           setError("Invalid email or password.");

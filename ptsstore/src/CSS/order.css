@@ -1,0 +1,158 @@
+/* Store container and overall styles */
+.store-container {
+  /* padding: 20px; */
+  font-family: Arial, sans-serif;
+}
+
+/* .headpts {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+} */
+
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color:rgb(174, 199, 230);
+  /* padding: 10px 10px; */
+}
+
+/* Order details container */
+.order-details-container {
+  /* margin-top: 20px; */
+  padding: 20px;
+  background-color: #fff;
+  /* border-radius: 8px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-details-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Cart Summary */
+.cart-summary-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.orders-table th {
+  background-color: #f4f4f4;
+}
+
+/* Total Price */
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Date selection */
+.date-selection {
+  margin-top: 20px;
+}
+
+.date-selection label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.date-selection input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Contact details section */
+.contact-details {
+  margin-top: 0px;
+}
+
+.contact-details label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.contact-details input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-details input[type="tel"] {
+  max-width: 300px; /* Ensure phone input has a max width */
+}
+
+.contact-details input[type="text"] {
+  max-width: 600px; /* Ensure address input has a max width */
+}
+
+/* Buttons */
+.cancel-button,
+.confirm-button {
+  padding: 10px 0px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 500px;
+}
+
+.cancel-button {
+  background-color: #f44336;
+}
+
+.cancel-button:hover,
+.confirm-button:hover {
+  background-color: #45a049;
+}
+
+/* Message for empty cart */
+.empty-cart-message {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+}
+
+/* Order cancellation and confirmation messages */
+.cancel-order,
+.confirm-order {
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  margin-top: 40px;
+}

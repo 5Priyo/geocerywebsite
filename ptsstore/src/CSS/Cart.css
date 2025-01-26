@@ -1,6 +1,6 @@
 /* Container for the entire cart page */
 .cart-page {
-  margin-top: 20px;
+  /* margin-top: 20px;/ */
   padding: 20px;
   font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
@@ -109,7 +109,7 @@
   font-weight: bold;
   text-align: right;
   color: #333;
-  font-style: italic;
+  /* font-style: italic; */
 }
 .total-price h3 {
   margin-top: 20px;
@@ -117,7 +117,7 @@
   font-weight: bold;
   text-align: center;
   color: #f51414;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 /* Checkout and navigation button styling */

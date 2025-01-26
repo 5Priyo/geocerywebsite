@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import "./Footer.css"; // Link to the CSS file
+import "../CSS/Footer.css"; // Link to the CSS file
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
             
             <li><a href="/">Store</a></li>
             <li><a href="/cart">Cart</a></li>
-            <li><a href="/checkout">Checkout</a></li>
+            <li><a href="/order">Order</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>

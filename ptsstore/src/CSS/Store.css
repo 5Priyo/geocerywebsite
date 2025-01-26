@@ -20,20 +20,20 @@
     color: black;
     text-decoration: none;
     margin-left: 20px;
-    padding: 12px 16px;
+    padding: 2px 6px;
     font-size: 17px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     transition: background-color 0.3s, color 0.3s;
   } 
   .topnav a:hover {
-    background-color: #dddddd;
+    /* background-color: #dddddd; */
     color: black;
   }
-  
+/*   
   .topnav a.active {
     background-color: #e59411;
     color: black;
-  }
+  } */
   .homemenutext{
     font-weight: bolder;
   }
@@ -72,7 +72,7 @@
   }
   
   .search-container button:hover {
-    background-color: #ccc;
+    background-color: #d21616;
     border-color: #2196F3;
   }
   
@@ -106,29 +106,51 @@
       margin: 5px 0;
     }
   }
-  .login-icon .fa-user {
-    /* font-size: 20px; */
-    color: blueviolet;
+
+  .fa-shopping-cart{
+    font-size: 15px;
+    color: rgb(11, 11, 11);
+    /* padding: 15px; */
+    
+  }
+   .fa-user {
+    font-size: 15px;
+    color: rgb(11, 11, 11);
+    padding: 10px;
+    
+  }
+  .fa-sign-out-alt{
+    font-size: 13px;
+    color: rgb(11, 11, 11);
+    padding: 10px;
+
+  }
+  /* .fa-sign-in-alt{
+    font-size: 15px;
+    color: rgb(11, 11, 11);
+  } */
+  .cart-icon{
+    color: rgb(21, 21, 21);
     
   }
   .cart-count {
     background-color: red;
-    color: rgb(246, 242, 242);
+    color: rgb(239, 232, 232);
     font-size: 12px;
     font-weight: bold;
     border-radius: 50%;
     padding: 2px 6px;
     position: relative;
     top: -10px;
-    right: -10px;
+    right: -5px;
   }
   
   .notification {
     color: #d35913; /* Green font color */
     font-size: 1rem;
     font-weight: bold;
-    background-color: #d8d8e8;/* Optional background*/
-    /* border: 1px solid #ddd; Optional border */
+    background-color: #d8d8e8;/*Optional background*/
+    border: 1px solid #ddd; /*Optional border*/
     padding: 5px;
     margin: 10px;
     border-radius: 2px;
@@ -140,6 +162,7 @@
 
   .user-info {
     display: flex;
+    color: #180751;
     align-items: center;
     gap: 10px; /* Adjust spacing between name and button */
   }
@@ -154,8 +177,9 @@
   
   .logout-button {
     background-color: transparent;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 5px 10px;
+    color: #180751;
     font-size: 14px;
     cursor: pointer;
     display: flex;

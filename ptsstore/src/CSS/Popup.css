@@ -1,0 +1,43 @@
+/* Overlay styling */
+.popup-overlay {
+  position: fixed;
+  top: 200px;
+  left: 500px;
+  width: 500px;
+  height: 300px;
+  bottom: 350px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup container styling */
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px; /* Adjust the width as needed */
+}
+
+/* "X" Close button styling */
+
+/* "Close" button styling (existing button) */
+.popup button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e01039;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #e34e4e;
+}

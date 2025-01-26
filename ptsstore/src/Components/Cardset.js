@@ -4,25 +4,25 @@ import "../CSS/Card.css"; // Import the CSS file
 const Cards = () => {
   const cardData = [
     {
-      image: "./clean.png",
+      image: "./clean.webp",
       title: "Spring cleaning for home appliance",
       description: "Get your clean on supplies.",
       bgColor: "#fff7e6",
     },
     {
-      image: "./pet.png",
+      image: "./dog.webp",
       title: "Your pet choice for fresh healthy food",
       description: "Get your clean on supplies.",
       bgColor: "#e6f7e6",
     },
     {
-      image: "./wash.png",
+      image: "./wash.jpg",
       title: "Washing item with discount product",
       description: "Get your clean on supplies.",
       bgColor: "#e6f1ff",
     },
     {
-      image: "./meat.png",
+      image: "./fresh.webp",
       title: "Fresh quality meat item with discount",
       description: "Get your clean on supplies.",
       bgColor: "#ffe6e6",

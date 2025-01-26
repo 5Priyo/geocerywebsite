@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import "./Cart.css";
+import "../CSS/Cart.css";
 import "../CSS/Store.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Footer from "./Footer";
@@ -63,7 +63,7 @@ function CartPage() {
     // Example condition: Navigate to OrderDetails if there are items, otherwise go to Home
     if (totalPrice > 100) {
       // Navigate to OrderDetails for carts with total price over 100
-      navigate("/orderdetails", { state: { cartItems, totalPrice } });
+      navigate("/order", { state: { cartItems, totalPrice } });
     } else {
       // Navigate to Home for carts with total price of 100 or less
       navigate("/");
@@ -78,14 +78,14 @@ function CartPage() {
 
       {/* Top Navigation Bar */}
       <div className="topnav">
-        <Link to="/">
-          <img
-            src="/logo.jpg"
-            alt="PTS Grocery Store"
-            className="contact-image"
-            style={{ width: "50px", height: "50px" }}
-          />
-        </Link>
+         <Link to="/">
+                <img
+                  src="/shop.png"
+                  alt="PTS Grocery Store"
+                  className=""
+                  style={{ width: "130px", height: "120px" }}
+                />
+              </Link>
         <Link
           to="/"
           className={`navact ${location.pathname === "/" ? "active" : ""}`}

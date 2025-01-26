@@ -1,0 +1,107 @@
+.all-products {
+    padding: 20px;
+    margin-left: 250px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #0d1e89;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-item img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+ 
+  
+/* Product price */
+.productprice {
+  color: #f35151;
+  margin: 5px 0;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+  .productname{
+    color: #090a0a;
+    font-size: 16px;
+  }
+  .product-delete {
+    background-color: #de0c1e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .product-edit{
+    background-color: #068a41;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product-edit:hover {
+    background-color: #167e0c;
+    
+  }
+  .product-delete:hover {
+    background-color: #f10906;
+  }
+
+  .add-product-form {
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .add-product-form h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .add-product-form input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-product-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-product-form button:hover {
+    background-color: #218838;
+  }
+  
