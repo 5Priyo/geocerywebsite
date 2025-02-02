@@ -122,8 +122,17 @@
   .fa-sign-out-alt{
     font-size: 13px;
     color: rgb(11, 11, 11);
-    padding: 10px;
+    /* padding: 10px; */
 
+  }
+  .fa-sign-in-alt{
+    font-size: 13px;
+    color: rgb(237, 232, 232);
+  }
+  .logout-btn{
+    width: 100px;
+    color: rgb(203, 198, 198);
+    background-color: #340d97;
   }
   /* .fa-sign-in-alt{
     font-size: 15px;
@@ -194,6 +203,6 @@
   }
   
   .logout-button i {
-    font-size: 14px; /* Adjust icon size */
+    font-size: 13px; /* Adjust icon size */
   }
   

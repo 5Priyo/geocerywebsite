@@ -2,39 +2,14 @@ import React, { useEffect, useState, useCallback } from "react";
 import Axios from "axios";
 import "../CSS/Productserver.css";
 
-function Productserver({ displayNotification, updateCartCount, addToCart, searchQuery }) {
+function Productserver({ displayNotification, addToCart, searchQuery }) {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [expandedProductId, setExpandedProductId] = useState(null); // Tracks which product is expanded
+  const [expandedProductId, setExpandedProductId] = useState(null);
 
   useEffect(() => {
     loadData();
   }, []);
-
-  const filterProducts = useCallback(
-    (query) => {
-      if (query) {
-        const words = query.trim().split(/\s+/).slice(0, 3).join(" ");
-        const filtered = products.filter((product) => {
-          const productNameMatch = product.name
-            .toLowerCase()
-            .includes(words.toLowerCase());
-          const productCategoryMatch =
-            product.category &&
-            product.category.toLowerCase().includes(words.toLowerCase());
-          return productNameMatch || productCategoryMatch;
-        });
-        setFilteredProducts(filtered);
-      } else {
-        setFilteredProducts(products);
-      }
-    },
-    [products]
-  );
-
-  useEffect(() => {
-    filterProducts(searchQuery);
-  }, [searchQuery, products, filterProducts]);
 
   const loadData = async () => {
     try {
@@ -46,10 +21,32 @@ function Productserver({ displayNotification, updateCartCount, addToCart, search
     }
   };
 
+  // Wrap filterProducts in useCallback with products as dependency
+  const filterProducts = useCallback(
+    (query) => {
+      if (query) {
+        const lowerQuery = query.toLowerCase().trim();
+        const filtered = products.filter(
+          (product) =>
+            product.name.toLowerCase().includes(lowerQuery) ||
+            (product.category && product.category.toLowerCase().includes(lowerQuery))
+        );
+        setFilteredProducts(filtered);
+      } else {
+        setFilteredProducts(products);
+      }
+    },
+    [products]
+  );
+
+  // Include filterProducts in dependency array so that ESLint is satisfied.
+  useEffect(() => {
+    filterProducts(searchQuery);
+  }, [searchQuery, filterProducts]);
+
   return (
     <div className="productserver">
       <h1 className="ph1">Product List</h1>
-
       {searchQuery && filteredProducts.length === 0 ? (
         <p>No products found.</p>
       ) : (
@@ -76,9 +73,7 @@ function Productserver({ displayNotification, updateCartCount, addToCart, search
                 </p>
                 <button
                   onClick={() =>
-                    setExpandedProductId(
-                      expandedProductId === product.id ? null : product.id
-                    )
+                    setExpandedProductId(expandedProductId === product.id ? null : product.id)
                   }
                   style={{
                     marginTop: "5px",

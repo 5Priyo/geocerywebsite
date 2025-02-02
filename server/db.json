@@ -32,6 +32,20 @@
       "password": "1111",
       "role": "user",
       "id": "c3c5"
+    },
+    {
+      "id": "2935",
+      "name": "Kavi",
+      "email": "Kavi@gmail.com",
+      "password": "2222",
+      "role": "user"
+    },
+    {
+      "name": "Anjali",
+      "email": "Anjali@gmail.com",
+      "password": "3333",
+      "role": "user",
+      "id": "fe49"
     }
   ],
   "products": [
@@ -39,6 +53,7 @@
       "name": "Samba",
       "price": 300,
       "description": "Samba rice has a distinct taste,  defined as “starchy”.",
+      "category": "whiterice",
       "image": "/Grocerys/rice2.png",
       "id": "2"
     },
@@ -46,6 +61,7 @@
       "name": "Anchor",
       "price": 900,
       "description": "Anchor milk is a brand of milk that comes in various forms, including full cream, low fat, and UHT.",
+      "category": "milk",
       "image": "/Grocerys/p21.png",
       "id": "3"
     },
@@ -53,6 +69,7 @@
       "name": "Parboiled rice",
       "price": 350,
       "description": "Parboiled rice,also known as converted rice, is partially precooked rice",
+      "category": "whiterice",
       "image": "/Grocerys/rice.png",
       "id": "4"
     },
@@ -60,6 +77,7 @@
       "name": "Red Rice",
       "price": 200,
       "description": "Red rice is a long, grainy rice variety which gets its reddish tinge from the presence of anthocyanin – a water soluble pigment.",
+      "category": "redrice",
       "image": "/Grocerys/rice4.png",
       "id": "5"
     },
@@ -67,6 +85,7 @@
       "name": "Jasmine Rice",
       "price": "400",
       "description": "Jasmine rice, also known as Thai fragrant rice, is an aromatic “long-grain” rice where each grain is about four times as long as it is wide",
+      "category": "whiterice",
       "image": "/Grocerys/rice5.png",
       "id": "6"
     },
@@ -74,6 +93,7 @@
       "name": "Rye",
       "price": 150,
       "description": "Rye, Secale cereale, is an herbaceous annual or biennial in the family Poaceae that is grown primarily for its grain",
+      "category": "redrice",
       "image": "/Grocerys/p15.png",
       "id": "7"
     },
@@ -81,6 +101,7 @@
       "name": "Parboiled rice",
       "price": 350,
       "description": "Parboiled rice, also known as converted rice, is a partially precooked rice",
+      "category": "whiterice",
       "image": "/Grocerys/rice2.png",
       "id": "8"
     },
@@ -88,6 +109,7 @@
       "name": "Parboiled rice",
       "price": 350,
       "description": "Parboiled rice,also known as converted rice, is partially precooked rice",
+      "category": "whiterice",
       "image": "/Grocerys/rice2.png",
       "id": "9"
     },
@@ -95,6 +117,7 @@
       "name": "Black Jasmine Rice",
       "price": 250,
       "description": "Thai Black Jasmine Rice has a deep purplish black color due to too much anthocyanin, an antioxidant that can be found in many purple-colored fruits and vegetable",
+      "category": "redrice",
       "image": "/Grocerys/so4.jpg",
       "id": "10"
     },
@@ -102,6 +125,7 @@
       "name": "Rye",
       "price": 150,
       "description": "Rye, Secale cereale, is an herbaceous annual or biennial in the family Poaceae that is grown primarily for its grain",
+      "category": "whiterice",
       "image": "/Grocerys/so3.webp",
       "id": "11"
     },
@@ -109,6 +133,7 @@
       "name": "Basmati Rice",
       "price": 290,
       "description": "Basmati rice (baz-MAH-tee) is a type of white rice commonly grown in the Himalayas, India, and Pakistan-with India producing about two-thirds of the world's supply.",
+      "category": "whiterice",
       "image": "/Grocerys/so2.jpg",
       "id": "12"
     },
@@ -116,6 +141,7 @@
       "name": "Sushi Rice",
       "price": 310,
       "description": "Sushi rice is short-grain rice that's been cooked and seasoned with vinegar, sugar, and salt",
+      "category": "whiterice",
       "image": "/Grocerys/so5.jpg",
       "id": "13"
     },
@@ -123,6 +149,7 @@
       "name": "Black Rice",
       "price": 210,
       "description": "Black rice has a deep black color and usually turns deep purple when cooked.",
+      "category": "redrice",
       "image": "/rice/redrice1.jpg",
       "id": "14"
     },
@@ -130,6 +157,7 @@
       "name": "Purple Rice",
       "price": 230,
       "description": "Purple rice has a deep black color, but it turns purple when people cook it",
+      "category": "redrice",
       "image": "/rice/redrice2.webp",
       "id": "15"
     },
@@ -137,6 +165,7 @@
       "name": "Red Rice",
       "price": 200,
       "description": "Red rice is a long, grainy rice variety which gets its reddish tinge from the presence of anthocyanin – a water soluble pigment.",
+      "category": "redrice",
       "image": "/rice/redrice3.webp",
       "id": "16"
     },
@@ -144,6 +173,7 @@
       "name": "Red Rice",
       "price": 200,
       "description": "Red rice is a long, grainy rice variety which gets its reddish tinge from the presence of anthocyanin – a water soluble pigment.",
+      "category": "redrice",
       "image": "/rice/redrice4.webp",
       "id": "17"
     },
@@ -151,6 +181,7 @@
       "name": "Red Cargo Rice",
       "price": 400,
       "description": "Red cargo rice is a type of long-grain, non-glutinous rice with a red, purple, or maroon bran.",
+      "category": "redrice",
       "image": "/rice/redrice5.avif",
       "id": "18"
     },
@@ -158,6 +189,7 @@
       "name": "Rose Matta Rice",
       "price": 270,
       "description": "Rose matta rice is a type of red, parboiled rice that is grown in India and is also known as Kerala red rice or Palakkadan matta rice",
+      "category": "redrice",
       "image": "/rice/redrice7.jpg",
       "id": "19"
     },
@@ -165,6 +197,7 @@
       "name": "Rose Matta Rice",
       "price": 270,
       "description": "Rose matta rice is a type of red, parboiled rice that is grown in India and is also known as Kerala red rice or Palakkadan matta rice",
+      "category": "redrice",
       "image": "/rice/redrice8.jpg",
       "id": "20"
     },
@@ -172,6 +205,7 @@
       "name": "Brown Rice",
       "price": 330,
       "description": "Brown rice is a food often associated with healthier eating.",
+      "category": "redrice",
       "image": "/rice/redrice9.webp",
       "id": "21"
     },
@@ -179,6 +213,7 @@
       "name": "Rose Matta Rice",
       "price": 270,
       "description": "Rose matta rice is a type of red, parboiled rice that is grown in India and is also known as Kerala red rice or Palakkadan matta rice",
+      "category": "redrice",
       "image": "/rice/redrice10.jpg",
       "id": "22"
     },
@@ -186,6 +221,7 @@
       "name": "Rose Matta Rice",
       "price": 270,
       "description": "Rose matta rice is a type of red, parboiled rice that is grown in India and is also known as Kerala red rice or Palakkadan matta rice",
+      "category": "redrice",
       "image": "/rice/redrice11.webp",
       "id": "23"
     },
@@ -193,6 +229,7 @@
       "name": "Rose Matta Rice",
       "price": 220,
       "description": "Rose matta rice is a type of red, parboiled rice that is grown in India and is also known as Kerala red rice or Palakkadan matta rice",
+      "category": "redrice",
       "image": "/rice/redrice12.jpg",
       "id": "24"
     },
@@ -200,6 +237,7 @@
       "name": "Brown Rice",
       "price": 240,
       "description": "Brown rice is a food often associated with healthier eating.",
+      "category": "redrice",
       "image": "/rice/redrice13.jpeg",
       "id": "25"
     },
@@ -207,6 +245,7 @@
       "name": "Rose Matta Rice",
       "price": 200,
       "description": "Rose matta rice is a type of red, parboiled rice that is grown in India and is also known as Kerala red rice or Palakkadan matta rice",
+      "category": "redrice",
       "image": "/rice/redrice14.webp",
       "id": "26"
     },
@@ -214,6 +253,7 @@
       "name": "Sushi Rice",
       "price": 310,
       "description": "Sushi rice is short-grain rice that's been cooked and seasoned with vinegar, sugar, and salt",
+      "category": "whiterice",
       "image": "/Grocerys/so5.jpg",
       "id": "27"
     },
@@ -221,6 +261,7 @@
       "name": "Sushi Rice",
       "price": 310,
       "description": "Sushi rice is short-grain rice that's been cooked and seasoned with vinegar, sugar, and salt",
+      "category": "whiterice",
       "image": "/Grocerys/so5.jpg",
       "id": "28"
     },
@@ -228,6 +269,7 @@
       "name": "Parboiled Long Grainrice",
       "price": 200,
       "description": "Parboiled long grain rice is a type of rice that's been partially boiled while still in its husk.",
+      "category": "whiterice",
       "image": "/rice/whiterice1.webp",
       "id": "29"
     },
@@ -235,6 +277,7 @@
       "name": "Basmati Rice",
       "price": 290,
       "description": "Basmati rice (baz-MAH-tee) is a type of white rice commonly grown in the Himalayas, India, and Pakistan-with India producing about two-thirds of the world's supply.",
+      "category": "whiterice",
       "image": "/rice/whiterice2.png",
       "id": "30"
     },
@@ -242,6 +285,7 @@
       "name": "Basmati Rice",
       "price": 290,
       "description": "Basmati rice (baz-MAH-tee) is a type of white rice commonly grown in the Himalayas, India, and Pakistan-with India producing about two-thirds of the world's supply.",
+      "category": "whiterice",
       "image": "/rice/whiterice3.jpg",
       "id": "31"
     },
@@ -249,6 +293,7 @@
       "name": "White Jasmine rice",
       "price": 300,
       "description": "It is moist and soft in texture when cooked, with a slightly sweet flavor. ",
+      "category": "whiterice",
       "image": "/rice/whiterice4.webp",
       "id": "32"
     },
@@ -256,6 +301,7 @@
       "name": "Basmati Rice",
       "price": 290,
       "description": "Basmati rice (baz-MAH-tee) is a type of white rice commonly grown in the Himalayas, India, and Pakistan-with India producing about two-thirds of the world's supply.",
+      "category": "whiterice",
       "image": "/rice/whiterice5.jpg",
       "id": "33"
     },
@@ -263,6 +309,7 @@
       "name": "Risotto Rice",
       "price": 200,
       "description": "A high-starch, round, medium- or short- grain white rice is usually used for making risotto",
+      "category": "whiterice",
       "image": "/rice/whiterice6.jpg",
       "id": "34"
     },
@@ -270,6 +317,7 @@
       "name": "Parboiled Long Grainrice",
       "price": 300,
       "description": "Parboiled long grain rice is a type of rice that's been partially boiled while still in its husk",
+      "category": "whiterice",
       "image": "/rice/whiterice7.jpg",
       "id": "35"
     },
@@ -277,6 +325,7 @@
       "name": "Polished medium-grain rice",
       "price": 140,
       "description": "\nMedium Grain: Medium grain polished rice is between two and three times longer than it is wide.",
+      "category": "whiterice",
       "image": "/rice/whiterice8.webp",
       "id": "36"
     },
@@ -284,6 +333,7 @@
       "name": "Parboiled rice",
       "price": 290,
       "description": "Parboiled rice,also known as converted rice, is partially precooked rice",
+      "category": "whiterice",
       "image": "/rice/whiterice9.jpeg",
       "id": "37"
     },
@@ -291,6 +341,7 @@
       "name": "Parboiled rice",
       "price": 270,
       "description": "Parboiled rice,also known as converted rice, is partially precooked rice",
+      "category": "whiterice",
       "image": "/rice/whiterice10.jpg",
       "id": "38"
     },
@@ -298,6 +349,7 @@
       "name": "Jasmine Rice",
       "price": 300,
       "description": "Jasmine rice, also known as Thai fragrant rice, is an aromatic “long-grain” rice where each grain is about four times as long as it is wide",
+      "category": "whiterice",
       "image": "/rice/whiterice11.webp",
       "id": "39"
     },
@@ -305,6 +357,7 @@
       "name": "Wild Rice",
       "price": 380,
       "description": "Wild rice is an aquatic grass that grows in shallow, slow-moving water in North America.",
+      "category": "whiterice",
       "image": "/rice/whiterice12.webp",
       "id": "40"
     },
@@ -312,6 +365,7 @@
       "name": "Velencia",
       "price": 500,
       "description": "Valencia rice is a term for rice grown in Valencia, Spain, and is often used in paella. ",
+      "category": "whiterice",
       "image": "/rice/whiterice13.jpg",
       "id": "41"
     },
@@ -319,6 +373,7 @@
       "name": "Basmati Rice",
       "price": 30,
       "description": "Basmati rice (baz-MAH-tee) is a type of white rice commonly grown in the Himalayas, India, and Pakistan-with India producing about two-thirds of the world's supply.",
+      "category": "whiterice",
       "image": "/rice/whiterice14.webp",
       "id": "42"
     },
@@ -326,6 +381,7 @@
       "name": "Sushi Rice",
       "price": 300,
       "description": "Sushi rice is short-grain rice that's been cooked and seasoned with vinegar, sugar, and salt",
+      "category": "whiterice",
       "image": "/Grocerys/so5.jpg",
       "id": "43"
     },
@@ -333,6 +389,7 @@
       "name": "Sushi Rice",
       "price": 300,
       "description": "Sushi rice is short-grain rice that's been cooked and seasoned with vinegar, sugar, and salt",
+      "category": "whiterice",
       "image": "/Grocerys/so5.jpg",
       "id": "44"
     },
@@ -340,6 +397,7 @@
       "id": "44",
       "name": "Anchur",
       "description": "Anchor Milk is known for its reliability",
+      "category": "milk",
       "price": "500",
       "image": "/Grocerys/milk.jpg"
     }
@@ -375,10 +433,130 @@
         }
       ],
       "totalPrice": 560
+    },
+    {
+      "id": "3389",
+      "orderId": "order-1738477577122",
+      "userId": "fe49",
+      "username": "Anjali",
+      "status": "pending",
+      "pickupDateTime": "2025-02-04T12:00:00Z",
+      "createdAt": "2025-02-02T06:26:17.122Z",
+      "updatedAt": "2025-02-02T06:26:17.123Z",
+      "phoneNumber": "0769895535",
+      "address": "M",
+      "cartItems": [
+        {
+          "name": "Red Rice",
+          "price": 200,
+          "description": "Red rice is a long, grainy rice variety which gets its reddish tinge from the presence of anthocyanin – a water soluble pigment.",
+          "image": "/Grocerys/rice4.png",
+          "id": "5",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 200
+    },
+    {
+      "id": "d2a8",
+      "orderId": "order-1738477848861",
+      "userId": "3017",
+      "username": "Priyanka",
+      "status": "pending",
+      "pickupDateTime": "2025-02-05T12:00:00Z",
+      "createdAt": "2025-02-02T06:30:48.861Z",
+      "updatedAt": "2025-02-02T06:30:48.861Z",
+      "phoneNumber": "0769895535",
+      "address": "Kokuvil",
+      "cartItems": [
+        {
+          "name": "Anchor",
+          "price": 900,
+          "description": "Anchor milk is a brand of milk that comes in various forms, including full cream, low fat, and UHT.",
+          "image": "/Grocerys/p21.png",
+          "id": "3",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 900
+    },
+    {
+      "id": "bd97",
+      "orderId": "order-1738482518411",
+      "userId": "e833",
+      "username": "Tamil",
+      "status": "pending",
+      "pickupDateTime": "2025-02-03T12:00:00Z",
+      "createdAt": "2025-02-02T07:48:38.411Z",
+      "updatedAt": "2025-02-02T07:48:38.411Z",
+      "phoneNumber": "0769895535",
+      "address": "Meesalai",
+      "cartItems": [
+        {
+          "name": "Parboiled rice",
+          "price": 350,
+          "description": "Parboiled rice,also known as converted rice, is partially precooked rice",
+          "category": "whiterice",
+          "image": "/Grocerys/rice.png",
+          "id": "4",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 350
+    },
+    {
+      "id": "e21d",
+      "orderId": "order-1738482703066",
+      "userId": "e833",
+      "username": "Tamil",
+      "status": "pending",
+      "pickupDateTime": "2025-02-04T12:00:00Z",
+      "createdAt": "2025-02-02T07:51:43.066Z",
+      "updatedAt": "2025-02-02T07:51:43.066Z",
+      "phoneNumber": "0769895535",
+      "address": "sanganai",
+      "cartItems": [
+        {
+          "name": "Red Rice",
+          "price": 200,
+          "description": "Red rice is a long, grainy rice variety which gets its reddish tinge from the presence of anthocyanin – a water soluble pigment.",
+          "category": "redrice",
+          "image": "/rice/redrice3.webp",
+          "id": "16",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 200
+    },
+    {
+      "id": "3d9b",
+      "orderId": "order-1738482751352",
+      "userId": "e833",
+      "username": "Tamil",
+      "status": "pending",
+      "pickupDateTime": "2025-02-05T12:00:00Z",
+      "createdAt": "2025-02-02T07:52:31.352Z",
+      "updatedAt": "2025-02-02T07:52:31.352Z",
+      "phoneNumber": "0769895535",
+      "address": "manipay",
+      "cartItems": [
+        {
+          "name": "Parboiled Long Grainrice",
+          "price": 200,
+          "description": "Parboiled long grain rice is a type of rice that's been partially boiled while still in its husk.",
+          "category": "whiterice",
+          "image": "/rice/whiterice1.webp",
+          "id": "29",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 200
     }
   ],
   "contactdetails": [
-    {},
+    {
+      "id": "23b8"
+    },
     {
       "id": "d1ef",
       "name": "sana",

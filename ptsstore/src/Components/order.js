@@ -11,12 +11,12 @@ function OrderDetails() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   const [bookingDate, setBookingDate] = useState("");
   const [pickupDate, setPickupDate] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState(""); // Added Phone Number
-  const [address, setAddress] = useState(""); // Added Address
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [address, setAddress] = useState("");
   const [isOrderCancelled, setIsOrderCancelled] = useState(false);
   const [isOrderConfirmed, setIsOrderConfirmed] = useState(false);
 
-  // Fetch logged-in user from localStorage
+  // Fetch logged-in user from localStorage and redirect to login if not found
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("loggedInUser"));
     if (user) {
@@ -26,7 +26,7 @@ function OrderDetails() {
     }
   }, [navigate]);
 
-  // Ensure totalPrice is defined and is a valid number
+  // Ensure totalPrice is valid
   const validTotalPrice = totalPrice && !isNaN(totalPrice) ? totalPrice : 0;
 
   // Handle order cancellation
@@ -35,27 +35,26 @@ function OrderDetails() {
     alert("Your order has been cancelled.");
   };
 
-  // Handle order confirmation and send POST request
+  // Handle order confirmation and send POST request to create an order
   const handleConfirmOrder = () => {
     if (bookingDate && pickupDate && phoneNumber && address) {
-      // Generate a unique orderId using a timestamp
-      const orderId = `order-${new Date().getTime()}`; // Unique order ID based on timestamp
+      // Generate a unique orderId using the current timestamp
+      const orderId = `order-${new Date().getTime()}`;
 
       const orderDetails = {
-        orderId: orderId, // Dynamically generated orderId
-        userId: loggedInUser.id, // Assuming loggedInUser has an id
-        username: loggedInUser.name, // Add the logged-in user's name
+        orderId: orderId,
+        userId: loggedInUser.id, // Assuming the logged-in user has an id
+        username: loggedInUser.name,
         status: "pending",
         pickupDateTime: `${pickupDate}T12:00:00Z`, // Assuming noon pickup time
-        createdAt: new Date().toISOString(), // Add the creation time of the order
+        createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
         phoneNumber,
         address,
-        cartItems, // Add cartItems to include the cart summary details
-        totalPrice: validTotalPrice, // Include the total price for reference
+        cartItems,
+        totalPrice: validTotalPrice,
       };
 
-      // Send POST request to the server
       fetch("http://localhost:3005/orders", {
         method: "POST",
         headers: {
@@ -68,6 +67,10 @@ function OrderDetails() {
           setIsOrderConfirmed(true);
           alert("Your order has been confirmed!");
           console.log("Order confirmed:", data);
+          // Redirect to home page after 2 seconds
+          setTimeout(() => {
+            navigate("/");
+          }, 1000);
         })
         .catch((error) => {
           alert("There was an error confirming your order.");
@@ -89,7 +92,6 @@ function OrderDetails() {
             <img
               src="/shop.png"
               alt="PTS Grocery Store"
-              className=""
               style={{ width: "130px", height: "120px" }}
             />
           </Link>
@@ -113,7 +115,6 @@ function OrderDetails() {
             {loggedInUser ? loggedInUser.name : "User"}'s Order Details
           </h1>
 
-          {/* If the order is cancelled, remove the order table */}
           {!isOrderCancelled && (
             <>
               {/* Cart items summary */}

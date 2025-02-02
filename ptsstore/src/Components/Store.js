@@ -44,9 +44,9 @@ export const Store = () => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    const query = event.target.search.value.trim();
-    setSearchQuery(query);
+    setSearchQuery(event.target.search.value.trim()); // Ensure state updates
   };
+  
 
   return (
     <div className="store-container">
@@ -103,9 +103,9 @@ export const Store = () => {
           </div>
         ) : (
           <Link to="/login" className="login-icon">
-            <p>
+            <button className="logout-btn">
               <i className="fa fa-sign-in-alt"></i> Login
-            </p>
+            </button>
           </Link>
         )}
       </div>
